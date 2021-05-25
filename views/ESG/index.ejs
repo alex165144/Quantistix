@@ -21,8 +21,8 @@
         if(typeof data !== 'undefined')
         {    
         $('select[name=selectpicker]').val((data.name));
-        width = 820
-        radius = width / 11
+        width = 620 // To adjust width of the chart
+        radius = width / 15   // To set radius
     
     
     
@@ -56,8 +56,8 @@
       
       
       const svg = d3.select("body").append("svg")
-          .attr("viewBox", [0, 0, width, width-250])
-          .style("font", "10px sans-serif");
+          .attr("viewBox", [0, 0, width, width-250])   // to set viewbox width and height
+          .style("font", "5px sans-serif"); // to sdjust font size
     
       const g = svg.append("g")
           .attr("transform", `translate(${width / 3},${width / 3})`);
